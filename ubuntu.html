@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ubuntu </title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
 <body>
-    <header>
-        <h1>Ubuntu</h1>
-        <nav>
+    <header class="header">
+        <div class="logo">
+            <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imágenes\instalatuSO.png" alt="Instala tu SO">
+        </div>
+        <h1  class="montserrat-bold">Ubuntu</h1>
+        <nav class="montserrat-regular">
             <a href="index.html">Inicio</a>
             <a href="sistemas_operativos.html">Sistemas Operativos</a>
             <a href="windows_10.html">Windows 10</a>
@@ -23,18 +27,120 @@
         </nav>
     </header>
 <main> 
-    <h2>¿Qué es Ubuntu?</h2>
-    <p>Ubuntu es una distribución GNU/Linux que ofrece un interesante sistema operativo para equipos de escritorio y servidores en el ámbito educativo. Es una distribución basada en Debian cuyas principales características son: facilidad de manejo, actualizaciones frecuentes, facilidad de instalación del sistema, búsqueda e instalación de programas robusta y fácil al basarse en paquetes, libertad de uso y distribución.</p>
+     <div class="contenedor">
+       <div class="texto">
+            <h2 class="montserrat-regular">¿Qué es Ubuntu?</h2>
+             <p class="montserrat-normal">Ubuntu es una distribución GNU/Linux que ofrece un interesante sistema operativo para equipos de escritorio y servidores en el ámbito educativo. Es una distribución basada en Debian cuyas principales características son: facilidad de manejo, actualizaciones frecuentes, facilidad de instalación del sistema, búsqueda e instalación de programas robusta y fácil al basarse en paquetes, libertad de uso y distribución.</p>
 
-    <h2>Requisitos del sistema para la instalación del sistema operativo</h2>
-        <ol>
+    <div class="image">
+                <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imágenes\ubuntu.png" alt="Ubuntu" width="210px" height="200px">
+        </div>
+
+    <h2 class="montserrat-regular">Requisitos del sistema para la instalación del sistema operativo</h2>
+        <ul class="montserrat-normal">
             <li>Procesador de doble núcleo a 2 GHz o superior</li>
             <li>Al menos 4 GB de RAM</li>
             <li>25 GB de espacio libre en disco</li>
             <li>Puerto USB y una memoria USB con al menos 4 GB de capacidad</li>
             <li>Conexión a Internet</li>
-        </ol>
-    <p>Ten en cuenta que estos métodos de instalación sólo funcionan con ordenadores y no se adaptan a los usuarios de VPS, ya que estamos instalando Ubuntu con una interfaz gráfica. Si prefieres una interfaz de línea de comandos, considera mejor comprar un hosting VPS.</p>
+        </ul>
+    <p class="montserrat-normal">Ten en cuenta que estos métodos de instalación sólo funcionan con ordenadores y no se adaptan a los usuarios de VPS, ya que estamos instalando Ubuntu con una interfaz gráfica. Si prefieres una interfaz de línea de comandos, considera mejor comprar un hosting VPS.</p>
 
+    <h2 class="montserrat-regular">Proceso de preparación del medio de instalación (USB, DVD)</h2>
+        <h3 class="montserrat-regular">Requisitos Previos</h3>
+        <ol class="montserrat-normal">
+            <li>Unidad USB (8 GB mínimo, se recomiendan 16 GB).</li>
+            <li>Archivo ISO de Ubuntu.</li>
+        </ol>
+        <h3 class="montserrat-regular">Crear el medio de instalación:</h3>
+        <ol class="montserrat-normal">
+            <li>Usa Rufus (Windows) o UNetbootin (Linux).</li>
+            <li>Conecta la USB y selecciona el archivo ISO de Ubuntu.</li>
+            <li>Configura la unidad y haz clic en "Empezar" (Rufus) o "OK" (UNetbootin) para iniciar la creación del medio.</li>
+        </ol>
+        <h3 class="montserrat-regular">Finalización y prueba:</h3>
+        <ol class="montserrat-normal">
+            <li>Expulsa la unidad USB de manera segura. </li>
+            <li>Reinicia la computadora y arranca desde la USB para comenzar la instalación de Ubuntu.</li>
+        </ol>
+
+    <h2 class="montserrat-regular">Pasos para acceder al menú de arranque y seleccionar el medio de instalación</h2>
+     <ul class="montserrat-normal">
+            <li>Conecta la unidad USB que contiene el medio de instalación a la computadora.</li>
+        </ul>
+    <h3 class="montserrat-regular">Entrar al BIOS/UEFI:</h3>
+    <ul class="montserrat-normal">
+       <li> Reinicia la computadora y presiona repetidamente la tecla Esc, F2, F10, F12 o Del (dependiendo del fabricante de tu computadora) para entrar al BIOS/UEFI.</li>
+       </ul>
+    <h3 class="montserrat-regular">Menú de Arranque:</h3>
+    <ul class="montserrat-normal">
+        <li> Si tu BIOS tiene un menú de arranque rápido, presiona la tecla correspondiente (generalmente F12 o Esc) para acceder directamente al menú de arranque y seleccionar la unidad USB.</li>
+        </ul>
+    <h3 class="montserrat-regular">Cambiar el Orden de Arranque:</h3>
+    <p class="montserrat-normal">Si necesitas cambiar el orden de arranque:</p>
+    <ul class="montserrat-normal">
+        <li>Ve a la sección de arranque o "Boot".</li>
+        <li>Establece la unidad USB como la primera opción.</li>
+        <li>Guarda los cambios y sal del BIOS/UEFI (generalmente con F10).</li>
+        </ul>
+    <h3 class="montserrat-regular">Arrancar desde el Medio:</h3>
+    <ul class="montserrat-normal">
+        <li>Después de guardar y salir, la computadora debería reiniciar y cargar desde la unidad USB, iniciando el proceso de instalación de Ubuntu.</li>
+        </ul>
+
+    <h2 class="montserrat-regular">Opciones de Particionamiento del disco duro durante la instalación</h2>
+    <p class="montserrat-normal"> Durante la instalación de Windows, generalmente se te ofrecen opciones simplificadas de particionamiento, como:</p>
+    <h3 class="montserrat-regular">Instalación Normal:</h3>
+        <p class="montserrat-normal">Ubuntu sugiere una configuración automática de particiones. Adecuado si estás instalando Ubuntu como único sistema operativo en el disco.</p>
+    <h3 class="montserrat-regular">Personalizado (Avanzado):</h3>
+        <p class="montserrat-normal">Permite configurar particiones manualmente, también puedes crear particiones separadas para / (raíz), /home, y swap (opcional). Útil si deseas una configuración personalizada, como separar el sistema operativo de tus archivos personales.</p>
+
+    <h2 class="montserrat-regular">Configuración de ajustes básicos como idioma, huso horario y teclado</h2>
+     <h3 class="montserrat-regular">Idioma</h3>
+        <ol class="montserrat-normal">
+        <li>Abrir Configuración del Sistema: Ve a "Configuración del Sistema".</li>
+        <li>Región y Lenguaje: Selecciona esta opción.</li>
+        <li>Agregar Idioma: Haz clic en el icono + y selecciona el idioma deseado del listado. Aplica y reinicia la sesión para completar la instalación.</li>
+        </ol>
+     <h3 class="montserrat-regular">Huso Horario</h3>
+        <ol class="montserrat-normal">
+        <li>Abrir Configuración del Sistema: Ve a "Configuración del Sistema".</li>
+        <li>Fecha y Hora: Selecciona esta opción.</li>
+        <li>Huso Horario: Haz clic en el mapa o selecciona de la lista desplegable el huso horario deseado. Aplica los cambios.</li>
+        </ol>
+     <h3 class="montserrat-regular">Teclado</h3>
+        <ol class="montserrat-normal">
+        <li>Abrir Configuración del Sistema: Ve a "Configuración del Sistema".</li>
+        <li>Teclado: Selecciona esta opción.</li>
+        <li>Distribuciones: Ve a la pestaña "Distribuciones", haz clic en "Añadir" y selecciona la distribución de teclado deseada. Aplica los cambios.</li>
+        </ol>
+    <h2 class="montserrat-regular">Configuración de Ajustes Básicos en Ubuntu Server (Sin Interfaz Gráfica)</h2>
+     <h3 class="montserrat-regular">Idioma</h3>
+        <ol class="montserrat-normal">
+        <li>Conexión SSH: Conéctate al servidor mediante SSH.</li>
+        <li>Configurar Locales: Ejecuta sudo dpkg-reconfigure locales. Selecciona "es_ES.UTF-8" y establécelo como predeterminado. Reinicia el servidor para aplicar los cambios.</li>
+        </ol>
+     <h3 class="montserrat-regular">Huso Horario</h3>
+        <ol class="montserrat-normal">
+        <li>Conexión SSH: Conéctate al servidor mediante SSH.</li>
+        <li>Configurar Huso Horario: Ejecuta sudo dpkg-reconfigure tzdata. Selecciona la región y ciudad correspondientes al huso horario deseado. Aplica los cambios.</li>
+        </ol>
+     <h3 class="montserrat-regular">Teclado</h3>
+        <ol class="montserrat-normal">
+        <li>Conexión SSH: Conéctate al servidor mediante SSH.</li>
+        <li>Configurar Teclado: Ejecuta sudo dpkg-reconfigure keyboard-configuration. Selecciona el modelo de teclado y el idioma "Spanish". Configura las teclas necesarias y reinicia el servidor.</li>
+        </ol>
+
+    <h2 class="montserrat-regular">Instalación de drivers necesarios para el funcionamiento del sistema operativo</h2>
+    <h2 class="montserrat-regular">Creación de cuentas de usuario y configuración de contraseñas</h2>
+    <h2 class="montserrat-regular">Actualización del sistema operativo después de la instalación</h2>
+    <h2 class="montserrat-regular">Configuración de la red y conexión a Internet</h2>
+    <h2 class="montserrat-regular">Instalación y configuración de software adicional</h2>
+    <h2 class="montserrat-regular">Configuración de opciones de seguridad y privacidad</h2>
+    <h2 class="montserrat-regular">Resolución de problemas comunes durante la instalación</h2>
+    <h2 class="montserrat-regular">Documentación de cualquier problema encontrado y las soluciones aplicadas</h2>
+    <h2 class="montserrat-regular">Recomendaciones y mejores prácticas para la instalación del Sistema Operativo</h2>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,32 +1,204 @@
-  
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #800080; /* Color morado */
-            color: white;
-            justify-content: space-between;
-            padding: 10px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;  707BA8
+    line-height: 1.6;
+    padding: 0;
+    background: linear-gradient(to right, #e0ecff, #f4f9ff);
+    color: #212E5D;
+}
+
+header {
+    background: linear-gradient(to right, #e0ecff, #f4f9ff);
+    color: #0D2D72;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    lign-items: center;
+}
+
+.header .logo {
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
-        header h1 {
-            header 
-            margin: 5px ; 
-            font-size: 2em;
+        .header .logo img {
+            height: 50px;
+            margin-right: 10px;
         }
-        header nav {
-            display: flex;
-            gap: 10px;
+        .header .logo span {
+            font-weight: bold;
+            font-size: 18px;
+            color: #0d2d72;
         }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
-        }
-        header nav a:hover {
-            color: orange; /* Color anaranjado */
-        }
-       
+
+
+header h1 {
+    margin: 15px;
+    font-size: 20px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header nav a {
+    color:#0d2d72;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #2980b9;
+}
+
+main {
+    padding: 20px;
+   }
+
+.intro {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    }
+
+.intro h2 {
+    color: #0d2d72;
+    }
+
+.intro ul {
+    list-style-type: none;
+    padding: 0;
+    }
+
+.intro ul li {
+    margin: 10px 0;
+    text-align: left;
+    }
+
+.intro ul li strong {
+    color: #0d2d72;
+    }
+
+.intro p {
+    text-align: center;
+    color: #333;
+    }
+
+.button {
+    display: inline-block;
+    background: #00ABE4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    }
+
+.button:hover {
+    background: #2980b9;
+    }
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    text-align: center;
+    }
+
+.features .feature {
+    padding: 20px;
+    }
+
+.features .feature img {
+    width: 50px;
+    height: 50px;
+    }
+
+.features .feature h3 {
+    color: #333;
+    margin-top: 10px;
+    }   
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-right: 220px; /* Espacio para el índice */
+}
+
+.sidebar {
+    width: 200px;
+    position: fixed;
+    right: 0;
+    top: 60px; /* Espacio para el encabezado */
+    height: calc(100% - 60px); /* Ajusta la altura para que no se solape con el encabezado */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto; /* Se desplaza si hay mucho texto */
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    margin-top: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+}
+
+.montserrat-normal  {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: bold;
+}
