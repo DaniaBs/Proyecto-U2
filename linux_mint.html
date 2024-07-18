@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="Imagenes\instalatuSO.png" alt="Instala tu SO">
+            <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\instalatuSO.png" alt="Instala tu SO">
         </div>
         <h1  class="montserrat-bold">Linux Mint</h1>
         <nav class="montserrat-regular">
@@ -32,8 +32,8 @@
          <h2 class="montserrat-regular">¿Qué es Linux Mint?</h2>
            <p class="montserrat-normal">Linux Mint es una distribución de Linux basada en la comunidad basada en Debian y Ubuntu que se esfuerza por ser un "sistema operativo moderno, elegante y cómodo que sea potente y fácil de usar". Linux Mint proporciona una completa box multimedia incluye un software propietario y viene con una variedad de aplicaciones gratuitas y de código abierto. El proyecto fue concebido por Clément Lefèbvre y está siendo desarrollado activamente por el equipo de Linux Mint y la comunidad.</p>
 
-    <div class="image">
-                <img src="Imagenes\linuxmint.png" alt="Linux Mint" width="210px" height="200px">
+    <div class="imagen">
+                <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\linuxmint.png" alt="Linux Mint" width="210px" height="auto">
         </div>
 
     <h2 class="montserrat-regular">Requisitos del sistema para la instalación del sistema operativo</h2>
@@ -51,11 +51,27 @@
             <li>Unidad USB (8 GB mínimo, se recomiendan 16 GB).</li>
             <li>Archivo ISO de Linux Mint.</li>
         </ol>
+
+        <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\descar.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href="https://mirror.clarkson.edu/linuxmint-images/stable/21.3/linuxmint-21.3-cinnamon-64bit.iso" class="button-link">Descargar ISO</a>
+        </p>
+        </div>
+
         <h3 class="montserrat-regular">Crear el medio de instalación:</h3>
-        <ol class="montserrat-normal">
-            <li>Descarga Rufus (Windows) o UNetbootin (Linux).</li>
+        <ul class="montserrat-normal">
+            <li>Descarga Rufus (es la herramienta que nos servirá para bootear nuestra USB).</li>
+        </ul> 
+            <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\descar.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href=" https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe" class="button-link">Descargar Rufus</a>
+        </p>
+        </div>
+         <ol class="montserrat-normal">
             <li>Conecta la USB y selecciona el archivo ISO de Linux Mint.</li>
-            <li>Configura la unidad y haz clic en "Empezar" (Rufus) o "OK" (UNetbootin) para iniciar la creación del medio.</li>
+            <li>Configura la unidad y haz clic en "Empezar" para iniciar la creación del medio.</li>
         </ol>
         <h3 class="montserrat-regular">Finalización y prueba:</h3>
         <ol class="montserrat-normal">
@@ -116,14 +132,134 @@
         </ol>
 
     <h2 class="montserrat-regular">Instalación de drivers necesarios para el funcionamiento del sistema operativo</h2>
+    <h3 class="montserrat-regular"> Actualización del Sistema</h3>
+     <p class="montserrat-normal">Actualiza tu sistema para asegurar que tienes los últimos paquetes y mejoras.</p>
+        <ul class="montserrat-normal">
+        <li>sudo apt update</li>
+        <li>sudo apt upgrade</li>
+        </ul>
+     <h3 class="montserrat-regular">Instalación de Controladores Adicionales</h3>
+     <p class="montserrat-normal">Abre el menú.
+     Ve a "Administración" > "Administración de controladores".
+     Selecciona los controladores que necesitas y sigue las instrucciones en pantalla.</p>
+
+    <h3 class="montserrat-regular">Reiniciar el Sistema</h3>
+       <p class="montserrat-normal">Reinicia tu computadora para que los nuevos controladores se apliquen correctamente.</p>
+     <ul class="montserrat-normal"><li>sudo reboot</li></ul>
+
     <h2 class="montserrat-regular">Creación de cuentas de usuario y configuración de contraseñas</h2>
+
+        <p class="montserrat-normal">Añadir y crear usuarios es esencial para los administradores. El comando "useradd" permite crear nuevos usuarios especificando opciones como el directorio de inicio y el shell por defecto. Para una interfaz más interactiva, se puede usar "adduser", que guía al administrador a través del proceso de configuración del usuario, incluyendo la asignación de una contraseña. Tras crear un usuario, el comando "passwd nombre_usuario" se usa para establecer una contraseña segura. Estos pasos aseguran que los usuarios estén configurados correctamente y cumplan con las políticas de seguridad del sistema. </p>
+    
     <h2 class="montserrat-regular">Actualización del sistema operativo después de la instalación</h2>
+
+     <h3 class="montserrat-regular">Conéctate al servidor usando SSH:</h3>
+<p class="montserrat-normal">ssh usuario@direccion_ip</p>
+
+ <h3 class="montserrat-regular">Actualiza la lista de paquetes disponibles:</h3>
+<p class="montserrat-normal">sudo apt update</p>
+
+ <h3 class="montserrat-regular">Actualiza todos los paquetes instalados a sus versiones más recientes:</h3>
+<p class="montserrat-normal">sudo apt upgrade -y</p>
+
+ <h3 class="montserrat-regular">Si quieres actualizar a una nueva versión de Linux Mint, puedes hacerlo con:</h3>
+<p class="montserrat-normal">sudo apt dist-upgrade -y</p>
+
+ <h3 class="montserrat-regular">Limpia el sistema eliminando paquetes obsoletos y dependencias no utilizadas:</h3>
+<p class="montserrat-normal">sudo apt autoremove -y</p>
+<p class="montserrat-normal">sudo apt autoclean</p>
+
+ <h3 class="montserrat-regular">Reinicia el servidor (si es necesario):</h3>
+<p class="montserrat-normal">sudo reboot</p>
+
     <h2 class="montserrat-regular">Configuración de la red y conexión a Internet</h2>
+   <ul class="montserrat-normal">Haz click sobre Menú</li>
+<li>Ve a Configuración del Sistema</li>
+<li>Ahora selecciona Hardware > Red</li>
+<li>Mueve la pestaña de Inalámbrica hacia la derecha</li>
+</ul>
+
     <h2 class="montserrat-regular">Instalación y configuración de software adicional</h2>
+    <h3 class="montserrat-regular">Google Chrome:</h3>
+    <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\chrome.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href="https://www.google.com/chrome/" class="button-link">Descargar Chrome</a>
+        </p>
+        </div>
+<p class="montserrat-normal">Descarga y ejecuta:</p>
+
+<p class="montserrat-normal">sudo dpkg -i google-chrome-stable_current_amd64.deb</p>
+<p class="montserrat-normal">sudo apt-get install -f</p>
+
+<h3 class="montserrat-regular">LibreOffice:</h3>
+<p class="montserrat-normal">Actualiza con:</p>
+<p class="montserrat-normal">sudo apt update</p>
+<p class="montserrat-normal">sudo apt upgrade libreoffice</p>
+
     <h2 class="montserrat-regular">Configuración de opciones de seguridad y privacidad</h2>
+    <ul class="montserrat-normal"> 
+        <li>Firewall (UFW): Esencial para controlar el tráfico de red. UFW ofrece una configuración sencilla y efectiva para limitar accesos no autorizados.</li>
+<li>SELinux: Ofrece un control avanzado sobre los permisos y accesos, ideal para entornos que requieren una seguridad muy rigurosa y granular. </li>
+<li>Actualizaciones de seguridad: Mantener el sistema actualizado es fundamental para protegerse contra vulnerabilidades conocidas.</li>
+</ul>
+
     <h2 class="montserrat-regular">Resolución de problemas comunes durante la instalación</h2>
+    <ul class="montserrat-normal"> 
+
+    <h3 class="montserrat-regular">Errores de particionamiento</h3>
+
+<li>Crear o modificar particiones: Usa GParted para gestionar particiones.</li>
+
+<li>"No root file system is defined": Durante la instalación, asegúrate de asignar / como punto de montaje para la partición raíz.</li>
+
+<h3 class="montserrat-regular">Fallos en la instalación de controladores</h3>
+
+<li>Controladores de gráficos: Utiliza el Gestor de controladores o, si no puedes iniciar, usa nomodeset en GRUB.</li>
+<h3 class="montserrat-regular">Dispositivos de red no funcionan</h3>
+
+<li>Actualizar kernel: Ejecuta sudo apt update, upgrade, e instala el kernel adecuado.</li>
+<h3 class="montserrat-regular">Otros problemas comunes</h3>
+
+<li>Sistema no arranca: Arranca desde un Live USB y repara GRUB.</li>
+
+<li>Falta de espacio en disco: Usa GParted para liberar espacio antes de la instalación.</li>
+
+<li>Instalación se cuelga: Verifica la integridad del medio de instalación y usa opciones de arranque correctas desde el Live USB.</li>
+</ul> 
+
     <h2 class="montserrat-regular">Documentación de cualquier problema encontrado y las soluciones aplicadas</h2>
+      <h3 class="montserrat-regular">Identificación del Problema</h3>
+        <p class="montserrat-normal">Localiza y define claramente el problema que afecta los objetivos.
+        Formula preguntas clave para entender dónde, qué, cuándo, quién y por qué ocurre el problema.</p>
+
+      <h3 class="montserrat-regular">Análisis del Problema</h3>
+        <p class="montserrat-normal">Reúne datos e información relevante y confiable sobre el problema.
+         Comprende el problema desglosándolo en segmentos si es complejo.
+         Asigna prioridades basadas en la importancia y urgencia de cada problema identificado.</p>
+
+      <h3 class="montserrat-regular">Generación de Soluciones Potenciales</h3>
+        <p class="montserrat-normal">Propón varias alternativas de solución basadas en los datos y análisis realizados.
+        Considera la condición deseada y las fallas identificadas en el análisis del problema.</p>
+
+      <h3 class="montserrat-regular">Toma de Decisiones y Planes de Acción</h3>
+        <p class="montserrat-normal">Define claramente los problemas.
+        Recopila datos relevantes.
+        Genera opciones viables de solución.
+        Selecciona una acción a seguir.
+        Evalúa los riesgos asociados con cada opción de solución antes de decidir.</p>
+
     <h2 class="montserrat-regular">Recomendaciones y mejores prácticas para la instalación del Sistema Operativo</h2>
+    <ul class="montserrat-normal">
+    <li>Verifica Compatibilidad: Asegúrate de que el hardware sea compatible con el sistema operativo.</li>
+    <li>Respaldo de Datos: Haz una copia de seguridad de tus datos importantes antes de instalar.</li>
+    <li>Medio de Instalación Seguro: Usa medios de instalación oficiales y verificados.</li>
+    <li>Particionamiento: Planifica cómo dividir tu disco de manera efectiva.</li>
+    <li>Instala Actualizaciones: Actualiza el sistema y los controladores una vez instalado.</li>
+    <li>Documentación: Registra ajustes y problemas para referencia futura.</li>
+    </ul>
+    <h2 class="montserrat-regular">Video Tutorial: Guía paso a paso para la Instalación</h2>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/exe96jg5esw" title="Como Instalar Linux Mint | Guía paso a paso del proceso de instalación desde USB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
     </div>

@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="Imagenes\instalatuSO.png" alt="Instala tu SO">
+            <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\instalatuSO.png" alt="Instala tu SO">
         </div>
         <h1  class="montserrat-bold"> Windows 10 </h1>
         <nav class="montserrat-regular">
@@ -37,8 +37,8 @@
 
         <p class="montserrat-normal"> Windows 10 está más avanzado y adaptador al hardware actual que los anteriores, además posee nuevas funciones que antes eran imposibles de implementar por limitaciones físicas de hardware. <p>
 
-        <div class="image">
-                <img src="Imagenes\windows.png" alt="Windows" width="210px" height="200px">
+        <div class="imagen">
+                <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\windows.png" alt="Windows" width="210px" height="auto">
         </div>
         
     <h2 class="montserrat-regular">Requisitos del sistema para la instalación del sistema operativo</h2>
@@ -52,15 +52,35 @@
         </ul>
     <h2 class="montserrat-regular">Proceso de preparación del medio de instalación (USB, DVD)</h2>
         <h3 class="montserrat-regular">Requisitos Previos</h3>
-        <ol class="montserrat-normal">
+        <ul class="montserrat-normal">
             <li>Unidad USB (8 GB mínimo, se recomiendan 16 GB).</li>
-            <li>Archivo ISO de Windows 10.</li>
-        </ol>
+            <li>Archivo ISO de Windows 10 (Para esto necesitamos descargar Media Creation Tool de Microsoft)</li>
+        </ul>
+
+    <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\descar.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href="https://go.microsoft.com/fwlink/?LinkId=2265055" class="button-link">Descargar Media Creation Tool</a>
+        </p>
+        </div>
+
         <h3 class="montserrat-regular">Crear el medio de instalación:</h3>
+        <ul class="montserrat-normal">
+            <li>Después de tener el Archivo ISO de Windows mediante Media Creation Tool.
+            <li>Descarga Rufus (es la herramienta que nos servirá para bootear nuestra USB).</li>
+        </ul>
+        <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\descar.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href=" https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe" class="button-link">Descargar Rufus</a>
+        </p>
+        </div>
+
         <ol class="montserrat-normal">
-            <li>Descarga el Media Creation Tool de Microsoft
-            <li>Ejecuta la herramienta, elige "Crear medios de instalación para otro PC.</li>
-            <li>Selecciona la unidad USB y sigue las instrucciones para crear el medio.</li>
+            <li>Conecta tu USB a la computadora.</li>
+            <li>Abre la Rufus</li>
+            <li>Selecciona la imagen ISO que descargaste anteriormente</li>
+            <li>Selecciona la unidad USB donde deseas crear el booteable y sigue las instrucciones para crear el medio.</li>
         </ol>
         <h3 class="montserrat-regular">Finalización y prueba:</h3>
         <ol class="montserrat-normal">
@@ -116,18 +136,202 @@
         <ol class="montserrat-normal">
         <li>Idioma: En el menú de la izquierda, selecciona "Idioma".
         <li>Opciones del Idioma: Bajo "Idiomas preferidos", selecciona el idioma predeterminado y haz clic en "Opciones".</li>
-        <li>Agregar un Teclado: Bajo "Teclados", haz clic en "Agregar un teclado" y selecciona el idioma deseado.<l/i>
+        <li>Agregar un Teclado: Bajo "Teclados", haz clic en "Agregar un teclado" y selecciona el idioma deseado.</li>
         </ol>
         
     <h2 class="montserrat-regular">Instalación de drivers necesarios para el funcionamiento del sistema operativo</h2>
+    <h3 class="montserrat-regular">Crear una carpeta para el controlador:</h3>
+        <ul class="montserrat-normal">
+    <li>En el escritorio, haz clic derecho y selecciona Nuevo > Carpeta.</li>
+    <li>Nombra la carpeta como "driver".</li>
+        </ul>
+
+     <h3 class="montserrat-regular">Copiar y preparar el archivo del controlador:</h3>
+        <ul class="montserrat-normal">
+        <li>Copia el archivo descargado en la carpeta "driver".</li>
+        <li>Si es un archivo EXE, ejecútalo directamente.</li>
+        <li>Si es un archivo ZIP o RAR, descomprímelo:</li>
+        <li>Haz clic derecho sobre el archivo y selecciona Extraer todo, luego marca Mostrar los archivos extraídos al completar.</li>
+        </ul>
+
+     <h3 class="montserrat-regular">Abrir el Administrador de Dispositivos:</h3>
+        <ul class="montserrat-normal">
+        <li>Ve a Inicio > Panel de Control > Sistema y seguridad > Administrador de dispositivos.</li>
+        </ul>
+
+     <h3 class="montserrat-regular">Seleccionar el dispositivo:</h3>
+        <ul class="montserrat-normal">
+        <li>Encuentra el dispositivo que deseas instalar (ejemplo: adaptador de pantalla).</li>
+        <li>Haz clic en la flecha junto al dispositivo y luego doble clic en el dispositivo específico.</li>
+        </ul>
+
+     <h3 class="montserrat-regular">Actualizar el controlador:</h3>
+        <ul class="montserrat-normal">
+        <li>En las propiedades del dispositivo, selecciona la pestaña Controlador > Actualizar controlador.</li>
+        <li>Elige la opción Buscar software de controlador en el equipo y haz clic en Siguiente.</li>
+        <li>Selecciona Examinar para indicar la carpeta "driver" y haz clic en Siguiente.</li>
+        <li>Escoge el modelo deseado y sigue las instrucciones.</li>
+        </ul>
+
+     <h3 class="montserrat-regular">Si no aparece el modelo:</h3>
+        <ul class="montserrat-normal">
+        <li>Selecciona la opción Elegir en una lista de controladores de dispositivos en el equipo.</li>
+        <li>Haz clic en Usar disco > Examinar y localiza la carpeta "driver".</li>
+        <li>Selecciona el modelo y sigue las instrucciones.</li>
+        </ul>
+
+
     <h2 class="montserrat-regular">Creación de cuentas de usuario y configuración de contraseñas</h2>
+        <ol class="montserrat-normal">
+        <li>Seleccione Inicio  > Configuración  > Cuentas  y, a continuación, seleccione Familia y otros usuarios. (En algunas ediciones de Windows aparecerá Otros usuarios).</li>
+        <li>Junto a Agregar otro usuario, selecciona Agregar cuenta.</li>
+        <li>Selecciona No tengo los datos de inicio de sesión de esta persona y, en la página siguiente, selecciona Agregar un usuario sin cuenta Microsoft.</li>
+        <li>Escribe un nombre de usuario, una contraseña, un indicio de contraseña o elige preguntas de seguridad, y luego selecciona Siguiente.</li>
+        <li>Abre la configuración y crea otra cuenta.</li>
+        </ol>
+
     <h2 class="montserrat-regular">Actualización del sistema operativo después de la instalación</h2>
+    <p class="montserrat-normal">Cuando la actualización de Windows 10 2022, también conocida como Windows 10, la versión 22H2 esté lista para tu dispositivo, estará disponible para su descarga desde la página de Windows Update en Configuración. Elige una hora adecuada para descargar la actualización. Tendrás entonces que reiniciar el dispositivo y completar la instalación. Después, el dispositivo ejecutará Windows 10, versión 22H2.</p>
+    <p class="montserrat-normal">Para comprobar si ya estás ejecutando la actualización de Windows 10 2022, seleccione Ver historial de actualizaciones en la página de configuración de Windows Update.</p>
+    <p class="montserrat-normal">También ten en cuenta lo siguiente:</p>
+    <ul class="montserrat-normal">
+        <li>Si quieres instalar la actualización ahora, selecciona Inicio > Configuración  > Actualización y seguridad  > Windows Update  y luego elige Buscar actualizaciones. Si las actualizaciones están disponibles, instálalas.</li>
+    </ul>
+    <p class="montserrat-normal">Buscar actualizaciones</p>
+    <ul class="montserrat-normal">
+    <li>Si la versión 22H2 no se ofrece automáticamente a través de Buscar actualizaciones, puedes obtenerla manualmente a través del Asistente de Windows Update.</li>
+    <li>Si tienes problemas con la actualización del dispositivo, incluidos problemas con actualizaciones principales anteriores, consulta las correcciones habituales en Solucionar problemas de actualización de Windows.</li>
+    <li>Si Windows Update te advierte de que no tienes suficiente espacio en el dispositivo para instalar la actualización, consulta Liberar espacio para las actualizaciones de Windows.</li>
+    <li>Si tienes problemas de conexión a Internet durante la actualización del dispositivo, consulta Solucionar Wi-Fi problemas de conexión en Windows.</li>
+    </ul>
+
     <h2 class="montserrat-regular">Configuración de la red y conexión a Internet</h2>
+    <h3 class="montserrat-regular">Consigue el Equipo Adecuado</h2>
+        <p class="montserrat-normal">Para configurar una red inalámbrica, necesitamos:</p>
+          <ul class="montserrat-normal">
+          <li><strong>Conexión a Internet de banda ancha y módem:</strong> Contacta con un proveedor de acceso a Internet (ISP) para obtener una conexión ADSL o cable. Los ISP suelen proporcionar el módem necesario, a veces combinado con un router inalámbrico.</li>
+          <li><strong>Enrutador inalámbrico:</strong> Permite conectar dispositivos a la red sin cables mediante tecnologías como 802.11a/b/g/n/ac/ax.</li>
+          <li><strong>Adaptador de red inalámbrica:</strong> La mayoría de los portátiles y algunas computadoras de escritorio ya vienen con un adaptador de red inalámbrica integrado.</li>
+          </ul>
+
+    <h3 class="montserrat-regular">Configurar el Módem y la Conexión a Internet</h2>
+        <p class="montserrat-normal">Sigue las instrucciones del módem para conectarlo a la PC y a la conexión de Internet. Para ADSL, conecta el módem a una toma de teléfono. Para cable, conéctalo a un conector de cable.</p>
+
+    <h3 class="montserrat-regular">Colocación del Router Inalámbrico</h2>
+        <p class="montserrat-normal">Para que la señal sea óptima, sigue estos consejos:</p>
+          <ul class="montserrat-normal">
+          <li><strong>Ubicación Central:</strong> Coloca el router en el centro de tu casa para aumentar su cobertura.</li>
+          <li><strong>Altura y Obstáculos:</strong> Coloca el router lejos del suelo, paredes y objetos metálicos.</li>
+          <li><strong>Interferencias:</strong> Minimiza las interferencias evitando equipos que usen la misma frecuencia (2.4 GHz), como microondas y teléfonos inalámbricos. Usa teléfonos inalámbricos de 5.8 GHz para reducir problemas.</li>
+          </ul>
+
+    <h3 class="montserrat-regular">Configuración de la Red y Conexión a Internet en Windows 10</h3>
+          <ol class="montserrat-normal">
+          <li><strong>Accede a Configuración:</strong> Abre el menú de inicio y ve a <strong>Configuración > Red e Internet</strong>.</li>
+           <li><strong>Configura la Red:</strong> Selecciona <strong>Wi-Fi</strong> y luego <strong>Mostrar redes disponibles</strong>. Elige tu red, ingresa la contraseña y conéctate.</li>
+           <li><strong>Verifica la Conexión:</strong> Una vez conectado, verifica que tienes acceso a Internet.</li>
+           </ol>
+
     <h2 class="montserrat-regular">Instalación y configuración de software adicional</h2>
+      <h3  class="montserrat-regular">Instalación de Navegadores Web</h3>
+      <h3  class="montserrat-regular">Google Chrome</h3>
+        <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\chrome.png" alt="Descargar" width="43px" height="auto">
+        <p class="montserrat-regular">
+        <a href="https://www.google.com/chrome/" class="button-link">Descargar Chrome</a>
+        </p>
+        </div>
+    <ul class="montserrat-normal">
+        <li>Descarga y abre el instalador.</li>
+        <li>Instalar: Sigue las instrucciones en pantalla.</li>
+        <li>Configurar: Inicia sesión con tu cuenta de Google para sincronizar datos.</li>
+    </ul>
+      <h3 class="montserrat-regular">Instalación de Suites de Oficina</h3>
+      <h3 class="montserrat-regular">Office</h3>
+      <ul class="montserrat-normal">
+        <li>Descargar: Visita la página de Office, inicia sesión y descarga el instalador.
+        </ul>
+        <div class="container">
+        <img src="C:\Users\betic\Desktop\Proyecto Unidad II\Imagenes\office.png" alt="Descargar" width="90px" height="auto">
+        <p class="montserrat-regular">
+        <a href="https://www.office.com/?auth=1" class="button-link">Descargar Office</a>
+        </p>
+        </div>
+         
+       <ul class="montserrat-normal">
+        <li>Instalar: Sigue las instrucciones en pantalla.
+        <li>Activar: Abre una aplicación de Office y activa con tu cuenta de Microsoft.
+      </ul>
+      <h3 class="montserrat-regular">Configuración del Software</h3>
+      <ul class="montserrat-normal">
+        <li>Navegadores web: Configura opciones de privacidad y extensiones desde el menú de configuración.</li>
+        <li>Suites de oficina: Ajusta preferencias de guardado, idioma y diseño desde el menú de configuración de cada aplicación.</li>
+      </ul>
+
+
     <h2 class="montserrat-regular">Configuración de opciones de seguridad y privacidad</h2>
+    <p class="montserrat-normal">Elige la cantidad de información que quieres compartir con Microsoft cambiando la configuración de privacidad.</p>
+    <p class="montserrat-normal">En el menú Inicio, selecciona Configuración > Privacidad</p>
+    <p class="montserrat-normal">Verás una lista de opciones de privacidad general. Hay vínculos a la configuración de privacidad específica en la parte izquierda de la página.</p>
+
     <h2 class="montserrat-regular">Resolución de problemas comunes durante la instalación</h2>
+
+    <h3 class="montserrat-regular">Errores de Particionamiento:</h3>
+      <ol class="montserrat-normal">
+         <li>Antes de comenzar la instalación, asegúrate de que el disco duro esté en buen estado y correctamente conectado.</li>
+         <li>Verifica que no haya particiones corruptas o problemas físicos con el disco.</li>
+         <li>Durante la instalación, utiliza las opciones de particionamiento del instalador de Windows para crear, formatear o eliminar particiones según sea necesario.</li>
+      </ol>
+    <h3 class="montserrat-regular">Fallos en la Instalación de Controladores:</h3>
+      <ol class="montserrat-normal">
+         <li>Durante la instalación, observa si algún dispositivo muestra un triángulo amarillo con un signo de exclamación en el Administrador de dispositivos de Windows.</li>
+         <li>Esto indica que puede haber un problema con el controlador del dispositivo.</li>
+         <li>Para resolverlo, intenta actualizar el controlador desde el Administrador de dispositivos o descargando el controlador más reciente desde el sitio web del fabricante del dispositivo.</li>
+      </ol>
+     <h3 class="montserrat-regular">Depuración de Instaladores de Clase o Coinstaladores:</h3>
+       <ol class="montserrat-normal">
+         <li>Si experimentas problemas con instaladores de clase o coinstaladores durante la instalación de dispositivos, asegúrate de utilizar instaladores compatibles con la versión de Windows que estás instalando.</li>
+         <li>Verifica los requisitos de compatibilidad del fabricante del hardware o software.</li>
+         <li>Consulta la documentación o soporte técnico del fabricante para obtener instrucciones específicas sobre cómo depurar problemas durante la instalación.</li>
+       </ol>
+
+
     <h2 class="montserrat-regular">Documentación de cualquier problema encontrado y las soluciones aplicadas</h2>
+      <h3 class="montserrat-regular">Identificación del Problema</h3>
+        <p class="montserrat-normal">Localiza y define claramente el problema que afecta los objetivos.
+        Formula preguntas clave para entender dónde, qué, cuándo, quién y por qué ocurre el problema.</p>
+
+      <h3 class="montserrat-regular">Análisis del Problema</h3>
+        <p class="montserrat-normal">Reúne datos e información relevante y confiable sobre el problema.
+         Comprende el problema desglosándolo en segmentos si es complejo.
+         Asigna prioridades basadas en la importancia y urgencia de cada problema identificado.</p>
+
+      <h3 class="montserrat-regular">Generación de Soluciones Potenciales</h3>
+        <p class="montserrat-normal">Propón varias alternativas de solución basadas en los datos y análisis realizados.
+        Considera la condición deseada y las fallas identificadas en el análisis del problema.</p>
+
+      <h3 class="montserrat-regular">Toma de Decisiones y Planes de Acción</h3>
+        <p class="montserrat-normal">Define claramente los problemas.
+        Recopila datos relevantes.
+        Genera opciones viables de solución.
+        Selecciona una acción a seguir.
+        Evalúa los riesgos asociados con cada opción de solución antes de decidir.</p>
+
     <h2 class="montserrat-regular">Recomendaciones y mejores prácticas para la instalación del Sistema Operativo</h2>
+    <ul class="montserrat-normal">
+    <li>Verifica Compatibilidad: Asegúrate de que el hardware sea compatible con el sistema operativo.</li>
+    <li>Respaldo de Datos: Haz una copia de seguridad de tus datos importantes antes de instalar.</li>
+    <li>Medio de Instalación Seguro: Usa medios de instalación oficiales y verificados.</li>
+    <li>Particionamiento: Planifica cómo dividir tu disco de manera efectiva.</li>
+    <li>Instala Actualizaciones: Actualiza el sistema y los controladores una vez instalado.</li>
+    <li>Documentación: Registra ajustes y problemas para referencia futura.</li>
+    </ul>
+
+    <h2 class="montserrat-regular">Video Tutorial: Cómo bootear una USB</h2>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/HYYhVpZeiqs" title="El modo correcto de Instalar Windows 10 en Memoria USB Actualizado y Original" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2 class="montserrat-regular">Video Tutorial: Guía paso a paso para la Instalación</h2>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/j6x7xRWXcnk" title="Cómo instalar Windows 10 en 2024 ✅ Tutorial Paso a Paso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
     </div>
